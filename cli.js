@@ -51,7 +51,7 @@ const showContent = async () => {
 
         if (!options.file) console.log(data);
         else {
-            const regExp = new RegExp(options.file, 'igm');
+            const regExp = new RegExp(options.file, '');
             console.log(data.match(regExp));
         }
     }
